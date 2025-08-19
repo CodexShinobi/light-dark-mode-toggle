@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Light / Night Mode Toggle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <section>
+      <h1>Light / Night Mode demo</h1>
+      <p>Switch between light and night modes. The site remembers your preference and respects your OS preference on first visit.</p>
+
+      <div class="preview" id="preview">
+        <strong>Preview area</strong>
+        <p>This box shows how the colors look in the selected theme. Use the button to toggle modes or press <span class="kbd">T</span>.</p>
+        <div style="margin-top:auto;display:flex;gap:10px;">
+          <button class="btn">Primary action</button>
+          <button class="btn">Secondary</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="controls">
+      <button class="btn" id="toggleBtn">
+        <span id="btnLabel">Toggle mode</span>
+      </button>
+
+      <div style="display:flex;gap:8px">
+        <button class="btn" id="lightBtn">Light</button>
+        <button class="btn" id="darkBtn">Night</button>
+      </div>
+
+      <p style="font-size:13px;color:var(--muted);margin-top:6px">
+        Current: <span id="currentLabel">—</span>
+      </p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
